@@ -42,4 +42,26 @@ body {
 
 .btn {
     margin: 5px;
+    background-color: #E4007C !important;
+    color: white !important;
+    border: 2px solid transparent !important;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transition: 0.3s;
+    background-color: white !important;
+    color: #E4007C !important;
+    border-color: #E4007C !important;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    background-color: #c7006b;
 }
