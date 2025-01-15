@@ -1,0 +1,45 @@
+{
+  "name": "hydrasense_backend",
+  "version": "1.0.0",
+  "description": "Backend de aplicación para el monitoreo en tiempo real de la temperatura corporal e hidratación",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js",
+    "format": "prettier --write ."
+  },
+  "author": "Serge Eduardo Martínez Ramírez",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/chart.js": "^2.9.41",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/express-fileupload": "^1.5.1",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.9.0",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.12.0",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.22.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "env-var": "^7.5.0",
+    "express": "^4.21.1",
+    "express-fileupload": "^1.5.1",
+    "jsonwebtoken": "^9.0.2",
+    "uuid": "^11.0.4"
+  }
+}
